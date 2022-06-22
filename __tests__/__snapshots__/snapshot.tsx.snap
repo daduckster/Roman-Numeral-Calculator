@@ -12,6 +12,7 @@ exports[`renders homepage unchanged 1`] = `
           <input
             id="user-input"
             type="text"
+            value=""
           />
         </label>
         <input
