@@ -3,7 +3,23 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <div>
-    <main />
+    <main>
+      <form>
+        <label
+          for="user-input"
+        >
+          Your Number
+          <input
+            id="user-input"
+            type="text"
+          />
+        </label>
+        <input
+          type="submit"
+          value="Convert"
+        />
+      </form>
+    </main>
   </div>
 </div>
 `;

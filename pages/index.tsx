@@ -9,6 +9,12 @@ export default function Home() {
       </Head>
 
       <main>
+        <form>
+          <label htmlFor="user-input">Your Number
+            <input type="text" id="user-input"/>
+          </label>
+          <input type="submit" value="Convert"/>
+        </form>
 
       </main>
     </div>
