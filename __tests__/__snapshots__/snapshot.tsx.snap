@@ -19,6 +19,12 @@ exports[`renders homepage unchanged 1`] = `
           value="Convert"
         />
       </form>
+      <section>
+        <p>
+          Your Roman Numeral
+        </p>
+        <p />
+      </section>
     </main>
   </div>
 </div>

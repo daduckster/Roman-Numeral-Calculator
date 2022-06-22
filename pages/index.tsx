@@ -1,6 +1,9 @@
+import {useState} from "react";
 import Head from 'next/head'
 
 export default function Home() {
+  const [calculatedRomanNumber, setCalculatedRomanNumber] = useState<string>('');
+
   return (
     <div>
       <Head>
@@ -15,6 +18,11 @@ export default function Home() {
           </label>
           <input type="submit" value="Convert"/>
         </form>
+
+        <section>
+          <p>Your Roman Numeral</p>
+          <p>{calculatedRomanNumber}</p>
+        </section>
 
       </main>
     </div>

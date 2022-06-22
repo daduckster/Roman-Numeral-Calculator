@@ -6,4 +6,14 @@ describe('Home', () => {
     render(<Home />);
     expect(screen.getByLabelText('Your Number')).toBeInTheDocument();
   })
+
+  it('renders a Convert button', () => {
+    render(<Home />);
+    expect(screen.getByText('Convert')).toBeInTheDocument();
+  })
+
+  it('renders the output heading', () => {
+    render(<Home />);
+    expect(screen.getByText('Your Roman Numeral')).toBeInTheDocument();
+  })
 })
