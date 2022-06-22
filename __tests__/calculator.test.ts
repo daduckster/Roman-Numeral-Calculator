@@ -7,4 +7,18 @@ describe('Calculator', () => {
     const result = convertToRoman(input);
     expect(result).toBe(expected);
   })
+
+  it('converts the number 2 to II', () => {
+    const input = 2;
+    const expected = 'II';
+    const result = convertToRoman(input);
+    expect(result).toBe(expected);
+  })
+
+  it('converts the number 3 to III', () => {
+    const input = 3;
+    const expected = 'III';
+    const result = convertToRoman(input);
+    expect(result).toBe(expected);
+  })
 });
