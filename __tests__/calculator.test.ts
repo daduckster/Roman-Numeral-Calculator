@@ -1,6 +1,17 @@
 import {convertToRoman} from "../utils/calculatorHelper";
 
 describe('Calculator', () => {
+  it('only uses numbers 1-1000', () => {
+    expect(() => convertToRoman('1')).not.toThrow();
+    expect(() => convertToRoman('1000')).not.toThrow();
+    expect(() => convertToRoman('1001')).toThrow();
+    expect(() => convertToRoman('0')).toThrow();
+    expect(() => convertToRoman('-1')).toThrow();
+    expect(() => convertToRoman('-1000')).toThrow();
+    expect(() => convertToRoman('hello world')).toThrow();
+    expect(() => convertToRoman('')).toThrow();
+  })
+
   it('converts the number 1 to I', () => {
     const input = 1;
     const expected = 'I';
