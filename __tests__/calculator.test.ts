@@ -21,4 +21,11 @@ describe('Calculator', () => {
     const result = convertToRoman(input);
     expect(result).toBe(expected);
   })
+
+  it('converts number 5 to V', () => {
+    const input = 5;
+    const expected = 'V';
+    const result = convertToRoman(input);
+    expect(result).toBe(expected);
+  })
 });
